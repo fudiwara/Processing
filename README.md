@@ -32,7 +32,7 @@ Processing
 * 第八回：[Introduction_08](https://github.com/Fujiwara-Laboratory/processing/tree/master/Introduction_08)  
 カメラ＋OpenCV 1。
 
-* 第回(の発展的内容)：[Introduction_08_2](https://github.com/Fujiwara-Laboratory/processing/tree/master/Introduction_08_2)  
+* 第八回(の発展的内容)：[Introduction_08_2](https://github.com/Fujiwara-Laboratory/processing/tree/master/Introduction_08_2)  
 カメラ＋OpenCV 2。
 
 * 第九回：[Introduction_09](https://github.com/Fujiwara-Laboratory/processing/tree/master/Introduction_09)  
