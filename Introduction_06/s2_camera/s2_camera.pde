@@ -12,6 +12,10 @@ void setup(){
   
   // 取り込み開始
   cam.start();
+  
+  // text用のフォント設定
+  fill(255, 0, 0);
+  textSize(20);
 }
 
 void draw(){
@@ -20,4 +24,6 @@ void draw(){
   
   // 読み込んだ画像を表示
   image(cam, 0, 0);
+  
+  text(frameRate, 10, 30);
 }
