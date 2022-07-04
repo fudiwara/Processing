@@ -7,8 +7,8 @@ int w = 640, h = 480;
 void setup(){
   // ウィンドウサイズと取り込みサイズを決めて初期化
   surface.setSize(w, h);
-  String[] cameras = Capture.list();
-  cam = new Capture(this, cameras[0]);
+  String[] cl = Capture.list();
+  cam = new Capture(this, cl[0]);
   
   // 取り込み開始
   cam.start();
