@@ -1,3 +1,6 @@
+* [color2depthMaskwithRGB](color2depthMaskwithRGB)  
+距離画像で得たマスクをカラー画像の視野に変換して出力します。
+
 * [hand0_pos](hand0_pos)  
 両手の位置に円を描画します。
 
