@@ -43,3 +43,20 @@ Kinectのプログラム例。
 
 #### Processingのバージョンについて
 Video関連の扱いが楽なため、バージョンは4系の利用を前提とします。
+
+#### Macでカメラを使う場合の注意点
+※ 以下はバージョン3系の頃のtipsですが、4系でも同様かもしれません
+
+macOS Catalina 10.15 (以降も?) でUSB接続のカメラを使う場合公式のVideoライブラリではおそらくエラーとなる。
+
+先人の某ブログ
+
+https://note.com/mement_mori1202/n/n4e888e7ef8b9
+
+の手順でターミナル経由で実行する必要があるため注意すること。processing-javaを使うという点では、サウンド処理も同様になる(と思う)。
+
+※ 10.14以前は(多分)問題ない
+
+Videoライブラリの入手先については以下の最新版がよい(かもしれない)。
+
+https://github.com/processing/processing-video/releases
