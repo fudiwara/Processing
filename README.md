@@ -1,4 +1,5 @@
 Processing
+研究室の入門講座用ソースコード(Processing)です
 ---
 #### [画像ファイル](https://github.com/fudiwara/processing/tree/master/Image)
 適当な画像が手元に無い場合は利用してください。
