@@ -4,7 +4,7 @@ Processing
 #### [画像ファイル](https://github.com/fudiwara/processing/tree/master/Image)
 適当な画像が手元に無い場合は利用してください。
 
-#### 入門講座(プログラミング)
+#### 入門講座(Processingプログラミング)
 各プログラムの概要については配付資料を参考にしてください。  
 * 第一回：[Introduction_01](https://github.com/fudiwara/processing/tree/master/Introduction_01)  
 とりあえず動かしてみる。
