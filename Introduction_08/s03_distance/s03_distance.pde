@@ -42,6 +42,6 @@ void draw(){
   
   // 中心座標のガイド(円)と距離の表示
   ellipse(x, y, 10, 10);
-  if(distance > 0) text(distance +" cm", x + 10, y - 10);
-  else text("-- cm", x + 10, y - 10);
+  if(distance > 0) text(distance +" mm", x + 10, y - 10);
+  else text("-- mm", x + 10, y - 10);
 }
