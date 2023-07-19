@@ -24,22 +24,19 @@ Processing
 * 第六回：[Introduction_06](https://github.com/fudiwara/processing/tree/master/Introduction_06)  
 カメラを使ってみる。
 
-* 第七回：[Introduction_07](https://github.com/fudiwara/processing/tree/master/Introduction_07)  
-カメラ入力の応用例 1。
+* 第六回(の発展的内容1)：[Introduction_06_2](https://github.com/fudiwara/processing/tree/master/Introduction_06_2)  
+カメラ入力の応用例。
 
-* 第七回(の発展的内容1)：[Introduction_07_2](https://github.com/fudiwara/processing/tree/master/Introduction_07_2)  
-カメラ入力の応用例 2。
-
-* 第七回(の発展的内容2)：[Introduction_07_3](https://github.com/fudiwara/processing/tree/master/Introduction_07_3)  
+* 第六回(の発展的内容2)：[Introduction_06_3](https://github.com/fudiwara/processing/tree/master/Introduction_06_3)  
 カメラ＋OpenCV 1。
 
-* 第七回(の発展的内容2)：[Introduction_07_4](https://github.com/fudiwara/processing/tree/master/Introduction_07_4)  
+* 第六回(の発展的内容3)：[Introduction_06_4](https://github.com/fudiwara/processing/tree/master/Introduction_06_4)  
 カメラ＋OpenCV 2。
 
-* 第八回：[Introduction_08](https://github.com/fudiwara/processing/tree/master/Introduction_08)  
+* 第七回：[Introduction_07](https://github.com/fudiwara/processing/tree/master/Introduction_07)  
 Kinectのプログラム例。
 
-* 第九回：[Introduction_09](https://github.com/fudiwara/processing/tree/master/Introduction_09)  
+* 第八回：[Introduction_08](https://github.com/fudiwara/processing/tree/master/Introduction_08)  
 画面遷移の考え方。
 
 #### Processingのバージョンについて
