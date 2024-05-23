@@ -22,6 +22,7 @@ void setup(){
   for(int i = 0; i < sampleFrames; i++) bufImages[i] = new int[w * h];
   
   // 画像の配置を考慮したウィンドウサイズ
+  surface.setResizable(true);
   surface.setSize(w * 2, h);
   
   // text用のフォント設定

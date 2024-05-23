@@ -21,6 +21,7 @@ int scale = 2;
 
 void setup(){
   // ウィンドウサイズと取り込みサイズを決めて初期化
+  surface.setResizable(true);
   surface.setSize(w, h);
   String[] cameras = Capture.list();
   cam = new Capture(this, cameras[0]);

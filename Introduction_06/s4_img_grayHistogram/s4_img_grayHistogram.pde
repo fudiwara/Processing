@@ -9,6 +9,7 @@ void setup(){
   // ヒストグラム用の画像(描画関数を使うためPGraphics)用のメモリ
   histImg = createGraphics(256 * histScale, 180 * histScale);
   // 画像サイズに応じたウィンドウサイズの決定
+  surface.setResizable(true);
   surface.setSize(srcImg.width + histImg.width, srcImg.height * 2);
   // 画像をグレースケールに
   PRGB2gray(srcImg, dstImg);

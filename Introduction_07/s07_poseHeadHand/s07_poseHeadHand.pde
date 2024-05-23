@@ -18,6 +18,7 @@ void setup(){
   // スケールに合わせた画面サイズ
   w = (int)(1920 * rsScale);
   h = (int)(1080 * rsScale);
+  surface.setResizable(true);
   surface.setSize(w, h);
   rsImg = createImage(w, h, RGB);
   

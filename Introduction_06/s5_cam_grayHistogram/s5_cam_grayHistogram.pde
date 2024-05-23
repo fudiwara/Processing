@@ -24,6 +24,7 @@ void setup(){
   histImg = createGraphics(256 * histScale, 180 * histScale);
   
   // 画像の配置を考慮したウィンドウサイズ
+  surface.setResizable(true);
   surface.setSize(w + histImg.width, h * 2);
 }
 

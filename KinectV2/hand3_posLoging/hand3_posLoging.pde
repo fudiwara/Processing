@@ -22,6 +22,7 @@ void setup(){
   skExp = 1 / skScale;
   w = (int)(1920 * skScale);
   h = (int)(1080 * skScale);
+  surface.setResizable(true);
   surface.setSize(w, h);
   // kinect関連の初期化
   kinect = new KinectPV2(this);

@@ -20,6 +20,7 @@ void setup(){
   rsScale = 1.0 / scaleRatio;
   w = (int)(1920 * rsScale);
   h = (int)(1080 * rsScale);
+  surface.setResizable(true);
   surface.setSize(w, h * 2);
   rsImg = createImage(w, h, RGB);
   

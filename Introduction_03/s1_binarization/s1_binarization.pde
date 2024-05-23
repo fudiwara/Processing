@@ -7,6 +7,7 @@ void setup(){
   
   // 画像の読み込みと出力用メモリの準備
   srcImg = loadImage("画像のファイルパス");
+  surface.setResizable(true);
   surface.setSize(srcImg.width, srcImg.height);
   dstImg = new PImage(srcImg.width, srcImg.height);
   

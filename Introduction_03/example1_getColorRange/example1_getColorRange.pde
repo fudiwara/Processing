@@ -4,6 +4,7 @@ int typeFlag;
 
 void setup(){
   srcImg = loadImage("画像のファイルパス");
+  surface.setResizable(true);
   surface.setSize(srcImg.width, srcImg.height);
 }
 

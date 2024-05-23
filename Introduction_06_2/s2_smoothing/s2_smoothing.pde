@@ -17,6 +17,7 @@ void setup(){
   dstImg = new PImage(w, h);
   
   // 画像の配置を考慮したウィンドウサイズ
+  surface.setResizable(true);
   surface.setSize(w * 2, h);
   
   // text用のフォント設定

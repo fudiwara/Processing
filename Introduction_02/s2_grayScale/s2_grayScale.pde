@@ -4,6 +4,7 @@ boolean flagDispOrignal = true;
 void setup(){
   // 画像の読み込みとウィンドウの準備
   srcImg = loadImage("画像のファイルパス");
+  surface.setResizable(true);
   surface.setSize(srcImg.width, srcImg.height);
   
   color c;

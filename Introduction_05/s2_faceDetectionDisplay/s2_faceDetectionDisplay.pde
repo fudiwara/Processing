@@ -12,6 +12,7 @@ Rectangle[] faces;
 void setup(){
   // 画像の読み込みと処理用メモリ(OpenCV)の準備
   srcPImg = loadImage("画像のファイルパス");
+  surface.setResizable(true);
   surface.setSize(srcPImg.width, srcPImg.height);
   cvImg = new OpenCV(this, srcPImg);
 

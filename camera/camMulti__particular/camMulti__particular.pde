@@ -7,6 +7,7 @@ int w2 = 480, h2 = 270;
 
 void setup(){
   // ウィンドウサイズと取り込みサイズを決めて初期化
+  surface.setResizable(true);
   surface.setSize(w1 + w2, h1 > h2 ? h1 : h2);
   
   cam1 = new Capture(this, w1, h1, "FaceTime HD Camera (Built-in)", 30);

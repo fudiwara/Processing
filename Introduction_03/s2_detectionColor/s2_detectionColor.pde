@@ -8,6 +8,7 @@ void setup(){
   
   // 画像の読み込みと出力用メモリの準備
   srcImg = loadImage("画像のファイルパス");
+  surface.setResizable(true);
   surface.setSize(srcImg.width, srcImg.height);
   
   // マウス(検出したい対象)の色定義矩形の初期位置

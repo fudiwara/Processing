@@ -24,6 +24,7 @@ void setup(){
   // 画像の配置を考慮したウィンドウサイズ
   int dh = h;
   if(h < histImg.height * shiftPix) dh = histImg.height * shiftPix;
+  surface.setResizable(true);
   surface.setSize(w + histImg.width, dh);
 }
 

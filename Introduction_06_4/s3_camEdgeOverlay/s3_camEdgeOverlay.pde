@@ -16,6 +16,7 @@ color edgeCol = color(255, 255, 255);
 
 void setup(){
   // ウィンドウサイズと取り込みサイズを決めて初期化
+  surface.setResizable(true);
   surface.setSize(w, h);
   cam = new Capture(this, w, h, 30);
   
