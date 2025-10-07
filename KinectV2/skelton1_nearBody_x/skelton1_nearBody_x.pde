@@ -38,7 +38,7 @@ void draw(){
   skeletonArray =  kinect.getSkeletonColorMap();
   
   // 最近傍のスケルトンID取得
-  int bodyNum = getNearestBodyNum();
+  int bodyNum = getNearestBodyNum(skeletonArray, 0.2);
   
   // 最近傍のスケルトンに対して処理する
   if(0 <= bodyNum){
@@ -89,18 +89,38 @@ void imageResize(PImage src, PImage dst, float s){
 
 // 最近傍のスケルトン取得【ここから】
 ArrayList<KSkeleton> skeletonArray3D;
-int getNearestBodyNum(){
+int getNearestBodyNum(ArrayList<KSkeleton> sa, float centerRatioX){
   skeletonArray3D =  kinect.getSkeleton3d();
   float nearDist = 1000, tmpDist;
   int nearestBodyNum = -1;
   
-  for(int i = 0; i < skeletonArray3D.size(); i++){
+  // 中央範囲の境界を計算
+  float centerX = 1920 / 2.0;
+  float rangeX = 1920 * centerRatioX / 2.0;
+  float leftX = centerX - rangeX;
+  float rightX = centerX + rangeX;
+  //println(skeletonArray.size(), skeletonArray3D.size());
+  
+  if (skeletonArray.size() != skeletonArray3D.size()) return nearestBodyNum;
+  
+  for(int i = 0; i < skeletonArray.size(); i++){
+    KSkeleton skeleton = (KSkeleton) skeletonArray.get(i);
     KSkeleton skeleton3D = (KSkeleton) skeletonArray3D.get(i);
+    if(skeleton.isTracked() && skeleton3D.isTracked()){
+      KJoint[] joints = skeleton.getJoints();
       
-    tmpDist = _evalZdist(skeleton3D.getJoints());
-    if(nearDist >= tmpDist){
-      nearDist = tmpDist;
-      nearestBodyNum = i;
+    // 画面中央の範囲に入っているかをチェック
+      float k_x = joints[KinectPV2.JointType_SpineBase].getX();
+      //println(k_x);
+    
+      if(leftX < k_x && k_x < rightX){
+        
+        tmpDist = _evalZdist(skeleton3D.getJoints());
+        if(nearDist >= tmpDist){
+          nearDist = tmpDist;
+          nearestBodyNum = i;
+        }
+      }
     }
   }
   return nearestBodyNum;

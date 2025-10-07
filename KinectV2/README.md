@@ -15,7 +15,10 @@
 両手の3D位置をCSVファイルに出力します。
 
 * [skelton0_nearBody](skelton0_nearBody)  
+もっともKinectに近い位置にいるボディのみを検出対象とするプログラム例です。
+
+* [skelton1_nearBody_x](skelton1_nearBody_x)  
 画面中央かつ、もっともKinectに近い位置にいるボディのみを検出対象とするプログラム例です。
 
-* [skelton1_hand3Dpos](skelton1_hand3Dpos)  
+* [skelton2_hand3Dpos](skelton2_hand3Dpos)  
 Full HDではなく、1/4サイズでカラー画像表示＆スケルトン表示、手の3D座標表示をします。
