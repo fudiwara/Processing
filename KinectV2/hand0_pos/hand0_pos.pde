@@ -44,11 +44,13 @@ void draw(){
       hlx = joints[KinectPV2.JointType_HandLeft].getX() * skScale;
       hly = joints[KinectPV2.JointType_HandLeft].getY() * skScale;
       
-      // 右手の状態：パーで1、グーで2
+      // 右手の状態：パーで1、グーで2、チョキで3
       if(joints[KinectPV2.JointType_HandRight].getState() == KinectPV2.HandState_Open){
         f_hr = 1;
       }else if(joints[KinectPV2.JointType_HandRight].getState() == KinectPV2.HandState_Closed){
         f_hr = 2;
+      }else if(joints[KinectPV2.JointType_HandRight].getState() == KinectPV2.HandState_Lasso){
+        f_hr = 3;
       }else{
         f_hr = 0;
       }
@@ -58,6 +60,8 @@ void draw(){
         f_hl = 1;
       }else if(joints[KinectPV2.JointType_HandLeft].getState() == KinectPV2.HandState_Closed){
         f_hl = 2;
+      }else if(joints[KinectPV2.JointType_HandLeft].getState() == KinectPV2.HandState_Lasso){
+        f_hl = 3;
       }else{
         f_hl = 0;
       }
@@ -67,6 +71,8 @@ void draw(){
         stroke(255, 0, 0);
       }else if(f_hr == 2){
         stroke(0, 255, 0);
+      }else if(f_hr == 3){
+        stroke(0, 0, 255);
       }else{
         stroke(0, 0, 0);
       }
@@ -76,6 +82,8 @@ void draw(){
         stroke(255, 0, 0);
       }else if(f_hl == 2){
         stroke(0, 255, 0);
+      }else if(f_hl == 3){
+        stroke(0, 0, 255);
       }else{
         stroke(0, 0, 0);
       }
