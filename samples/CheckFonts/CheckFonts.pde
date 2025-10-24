@@ -19,7 +19,7 @@ void draw() {
   textSize(32);
 
   String testText = "半角: 0123456789  全角: ０１２３４５６７８９";
-  text("フォント: " + fontList[fontIndex], 10, 50);
+  text(fontIndex + "  フォント: " + fontList[fontIndex], 10, 50);
   text(testText, 10, 100);
 }
 
